@@ -1,0 +1,36 @@
+.logo{
+  text-align: center;
+  padding: 10px 0;
+  img{
+    height: 50px;
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+
+ion-toolbar{
+  --border-width: 0 0 0px !important;
+  --border-color: rgba(0,0,0,0) !important;
+}
+
+.group-menu {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  background-color: #fff;
+  border-bottom: 1px solid #f4f4f4;
+  box-shadow: 0 4px 8px -3px rgb(128 128 128 / 10%);
+  nav{
+    display: flex;
+    flex-wrap: nowrap;
+    a{
+      cursor: pointer;
+      flex: 0 0 auto;
+      justify-content: space-between;
+      padding: 13px 16px 12px;
+      text-decoration: none;
+      color: var(--light-gray);
+    }
+  }
+}

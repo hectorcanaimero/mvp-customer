@@ -1,0 +1,55 @@
+<ion-app>
+  <ion-split-pane contentId="store">
+    <ion-menu side="start" menuId="store" contentId="store">
+      <ion-header class="ion-no-border">
+        <ion-toolbar>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="bg-blue">
+        <ion-list mode="ios">
+          <ion-menu-toggle autoHide="false">
+            <ion-item>
+              <ion-label>
+                <h2 class="py-2 pl-3">Mis Direcciones</h2>
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle autoHide="false" (click)="onAccount()">
+            <ion-item>
+              <ion-label>
+                <h2 class="py-2 pl-3">Mis Datos</h2>
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle autoHide="false">
+            <ion-item>
+              <ion-label>
+                <h2 class="py-2 pl-3">Mis Pedidos</h2>
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle autoHide="false">
+            <ion-item>
+              <ion-label>
+                <h2 class="py-2 pl-3">Contactanos</h2>
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle autoHide="false">
+            <ion-item lines="none">
+              <ion-label>
+                <h2 class="py-2 pl-3">Política de Privacidad</h2>
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+      <ion-footer class="ion-no-border">
+        <ion-toolbar>
+          <ion-title>Footer</ion-title>
+        </ion-toolbar>
+      </ion-footer>
+    </ion-menu>
+    <ion-router-outlet id="store"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

@@ -1,0 +1,12 @@
+<div class="product-item" (click)="onProduct(item)">
+  <div class="product-body">
+    <ion-label>
+      <h2>{{ item.name }}</h2>
+      <p>{{ item.description }}</p>
+      <h3>{{ item.price | currency }}</h3>
+    </ion-label>
+  </div>
+  <div class="product-image">
+    <img [src]="item.image">
+  </div>
+</div>

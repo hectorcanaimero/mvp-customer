@@ -1,0 +1,11 @@
+<app-header [data]="menu"></app-header>
+<ion-content>
+  <div class="container">
+    <app-card-store></app-card-store>
+    <app-banner [data]="banner"></app-banner>
+    <div *ngFor="let item of menu">
+      <app-list-product [data]="data" [menu]="item"></app-list-product>
+    </div>
+  </div>
+</ion-content>
+<app-footer></app-footer>

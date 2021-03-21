@@ -1,0 +1,30 @@
+.product-item{
+  display: flex;
+  border-bottom: 1px solid #dcdcdc;
+  margin: 10px 0;
+  cursor: pointer;
+  .product-body{
+    padding: .55rem;
+    ion-label{
+      h2{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+      }
+      p{
+        margin-bottom: .5rem;
+      }
+      h3{
+        font-weight: 700;
+      }
+    }
+  }
+  .product-image{
+    width: 120;
+    align-self: center;
+    img{
+      max-width: 120px;
+      border-radius: 10px;
+    }
+  }
+}

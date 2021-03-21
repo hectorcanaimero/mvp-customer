@@ -1,0 +1,43 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onClose()">
+        <ion-icon slot="start" name="chevron-down-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Mi informacion</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-11">
+        <div class="pt-4">
+          <form [formGroup]="formAccount">
+            <ion-item>
+              <ion-label position="stacked">Nombre y apellido</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="stacked">Correo Eletrocnico</ion-label>
+              <ion-input type="email" inputmode="email"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="stacked">ID o Cedula</ion-label>
+              <ion-input inputmode="numeric"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="stacked">Celular</ion-label>
+              <ion-input type="tel"></ion-input>
+            </ion-item>
+            <div class="button pt-3">
+              <ion-button (click)="onSubmit()" [disabled]="formAccount.invalid" expand="block" color="dark" shape="round">
+                Alterar
+              </ion-button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onClose()">
+        <ion-icon slot="start" name="chevron-down-outline" color="medium"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="container">
+    <ion-searchbar mode="ios" placeholder="Digite..." (ionChange)="onSearchChange($event)" [debounce]="250"></ion-searchbar>
+    <ion-list>
+      <ion-item *ngFor="let item of menu">
+        <ion-label color="medium">
+          <p>{{ item.name }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

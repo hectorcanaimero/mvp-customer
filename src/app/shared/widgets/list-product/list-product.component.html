@@ -1,0 +1,10 @@
+<div [id]="menu.url.substring(1)">
+  <ion-label>
+    <h1>{{ menu.name }}</h1>
+  </ion-label>
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-3" *ngFor="let item of data">
+      <app-card-product [item]="item"></app-card-product>
+    </div>
+  </div>
+</div>

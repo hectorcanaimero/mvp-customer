@@ -1,0 +1,9 @@
+<div class="banner">
+  <ion-slides mode="ios" scrollbar="true" [options]="options">
+    <ion-slide *ngFor="let item of data">
+      <div class="image">
+        <img [src]="item.url" alt="">
+      </div>
+    </ion-slide>
+  </ion-slides>
+</div>

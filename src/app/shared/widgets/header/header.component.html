@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="store">
+      </ion-menu-button>
+    </ion-buttons>
+    <div class="logo">
+      <img src="./assets/image/logo.jpeg" alt="">
+    </div>
+    <ion-buttons slot="end">
+      <ion-button (click)="onSearch()">
+        <ion-icon slot="icon-only" name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <div class="group-menu">
+    <nav class="item">
+      <a *ngFor="let item of data" [ngxScrollTo]="'pizza'">
+        {{ item.name }}</a>
+    </nav>
+  </div>
+</ion-header>
